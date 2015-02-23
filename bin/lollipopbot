@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+$: << File.join(__dir__, '..', 'lib')
+
+require 'lollipopbot/bot'
+
+CERTS_DIR = File.join(__dir__, '..', 'etc', 'certs')
+
+Lollipopbot::Bot.start!({
+  server:   'irc.dev.bbc.co.uk',
+  port:     6697,
+  channels: ['#lollibot'],
+  ssl: {
+    use:         true,
+    client_cert: File.join(CERTS_DIR, 'certificate.pem')
+  }
+})

@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cinch (2.2.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cinch (= 2.2.4)
