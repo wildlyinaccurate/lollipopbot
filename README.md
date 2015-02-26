@@ -6,6 +6,7 @@ An IRC bot for lazy lollipoppers.
 
  0. `git clone https://github.com/wildlyinaccurate/lollipopbot.git`
  0. `cd lollipopbot && bundle install`
+ 0. add your certificate.pem to etc/certs
  0. `./bin/lollipopbot`
 
 ## Commands
