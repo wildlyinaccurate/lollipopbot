@@ -2,7 +2,7 @@ require 'cinch'
 
 module Lollipopbot
   class Bot
-    BOT_NICK = 'lollipopbot'
+    BOT_NICK = ENV['BOT_NICK'] || 'lollipopbot'
 
     def initialize(opts)
       @bot = Cinch::Bot.new do

@@ -2,12 +2,14 @@
 
 An IRC bot for lazy lollipoppers.
 
-## Installation
+## Installation & Usage
 
  0. `git clone https://github.com/wildlyinaccurate/lollipopbot.git`
  0. `cd lollipopbot && bundle install`
  0. add your certificate.pem to etc/certs
  0. `./bin/lollipopbot`
+
+The default bot nick is `lollipopbot`. This can be changed with the `BOT_NICK` environment variable, e.g. `BOT_NICK=customnick ./bin/lollipopbot`.
 
 ## Commands
 
