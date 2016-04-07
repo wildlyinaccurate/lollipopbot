@@ -31,6 +31,10 @@ module Lollipopbot
           m.reply '!start'
         end
 
+        on :message, mention('there is a new merge request ready') do |m|
+          m.reply '!start'
+        end
+
         on :message, /PR #\d+ - build_fail/ do |m|
           m.reply 'I have no idea what I\'m doing'
           m.reply '!iamnotlollipop'
